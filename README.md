@@ -46,8 +46,8 @@ pip3 install -r requirements.txt
 ## Описание работы
 ```
 Пользователь вводит пароль с клавиатуры.
-Стойкость пароля считаем, как указано здесь:
-https://blogs.dropbox.com/tech/2012/04/zxcvbn-realistic-password-strength-estimation/
+Стойкость пароля считаем, как указано [здесь]
+(https://blogs.dropbox.com/tech/2012/04/zxcvbn-realistic-password-strength-estimation/)
 Скрипт выводит оценку от 1 до 10. 
 1 – очень слабый пароль, 10 – очень сильный. 
 ```
