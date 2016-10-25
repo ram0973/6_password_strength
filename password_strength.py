@@ -35,6 +35,8 @@ def print_password_strength_attributes(password: str):
           (password_strength_attributes['crack_time'],
            password_strength_attributes['crack_time_display'])
           )
+    print('Стойкость пароля по шкале от 1 до 10: %s' %
+          password_strength(password))
 
 
 if __name__ == '__main__':
@@ -42,5 +44,4 @@ if __name__ == '__main__':
     enable_win_unicode_console()
     user_password = input('Введите пароль для проверки: ').strip()
     print_password_strength_attributes(user_password)
-    print('Стойкость пароля по шкале от 1 до 10: %s' %
-          password_strength(user_password))
+
