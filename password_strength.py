@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from getpass import getpass
 import sys
 from zxcvbn import password_strength as zxcvbn_password_strength
 
@@ -42,6 +43,6 @@ def print_password_strength_attributes(password: str):
 if __name__ == '__main__':
 
     enable_win_unicode_console()
-    user_password = input('Введите пароль для проверки: ').strip()
+    user_password = getpass('Введите пароль для проверки: ').strip()
     print_password_strength_attributes(user_password)
 
