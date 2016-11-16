@@ -11,7 +11,7 @@ def get_password_strength(password: str) -> int:
     :return: стойкость пароля в баллах от 1 до 10
     """
     score = password_strength(password)['score']
-    return (score + 1) * 2 if score != 0 else 1
+    return [1, 3, 5, 7, 10][score]
 
 
 def print_password_strength_attributes(password: str):
